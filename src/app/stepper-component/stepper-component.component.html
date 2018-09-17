@@ -1,0 +1,159 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material Stepper Component</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Horizontal Stepper - Material Label</h2>
+  <mat-horizontal-stepper>
+    <mat-step label="Step 1">
+      Content Inside Stepper 1
+    </mat-step>
+    <mat-step label="Step 2">
+      Content Inside Stepper 2
+    </mat-step>
+    <mat-step label="Step 3">
+      Content Inside Stepper 3
+    </mat-step>
+  </mat-horizontal-stepper>
+</mat-card>
+<mat-card>
+  <h2>Vertical Stepper - Material Label</h2>
+  <mat-vertical-stepper>
+    <mat-step label="Step 1">
+      Content Inside Stepper 1
+    </mat-step>
+    <mat-step label="Step 2">
+      Content Inside Stepper 2
+    </mat-step>
+    <mat-step label="Step 3">
+      Content Inside Stepper 3
+    </mat-step>
+  </mat-vertical-stepper>
+</mat-card>
+<mat-card>
+  <h2>Material Stepper With Action Buttons</h2>
+  <mat-horizontal-stepper>
+    <mat-step label="Action Buttons">
+      <div>
+        <button mat-button>Save</button>
+        <button mat-button>Edit</button>
+        <button mat-button>Delete</button>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</mat-card>
+<mat-card>
+  <h2>Horizontal Stepper</h2>
+  <mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstGroup">
+      <form [formGroup]="firstGroup">
+        <ng-template matStepLabel>Employee Basic Details</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="First Name" formControlName="firstName" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput placeholder="Last Name" formControlName="lastName" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondGroup">
+      <form [formGroup]="secondGroup">
+        <ng-template matStepLabel>Contact Details</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Email" formControlName="email" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput placeholder="Phone" formControlName="phone" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdGroup">
+      <form [formGroup]="thirdGroup">
+        <ng-template matStepLabel>Gender</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Gender" formControlName="gender">
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Completed</ng-template>
+      Thanks For Sharing Your Details
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</mat-card>
+<mat-card>
+  <h2>Vertical Stepper</h2>
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstGroup">
+      <form [formGroup]="firstGroup">
+        <ng-template matStepLabel>Employee Basic Details</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="First Name" formControlName="firstName" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput placeholder="Last Name" formControlName="lastName" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondGroup">
+      <form [formGroup]="secondGroup">
+        <ng-template matStepLabel>Contact Details</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Email" formControlName="email" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput placeholder="Phone" formControlName="phone" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdGroup">
+      <form [formGroup]="thirdGroup">
+        <ng-template matStepLabel>Gender</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Gender" formControlName="gender">
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Completed</ng-template>
+      Thanks For Sharing Your Details
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</mat-card>

@@ -1,0 +1,53 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material Tabs Component</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Tabs Group With Tabs</h2>
+  <mat-tab-group>
+    <mat-tab label="First Tab">
+      <h3>Tab 1 Content</h3>
+    </mat-tab>
+    <mat-tab label="Two">
+      <h3>Tab 2 Content</h3>
+    </mat-tab>
+    <mat-tab label="Three">
+      <h3>Tab 3 Content</h3>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
+<mat-card>
+  <h2>Tabs Group With Tabs</h2>
+  <mat-tab-group dynamicHeight="false">
+    <mat-tab label="First Tab">
+      <h3>Tab 1 Content</h3>
+      <h3>Tab 1 Content</h3>
+      <h3>Tab 1 Content</h3>
+      <h3>Tab 1 Content</h3>
+      <h3>Tab 1 Content</h3>
+      <h3>Tab 1 Content</h3>
+      <h3>Tab 1 Content</h3>
+    </mat-tab>
+    <mat-tab label="Two">
+      <h3>Tab 2 Content</h3>
+    </mat-tab>
+    <mat-tab label="Three">
+      <h3>Tab 3 Content</h3>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
+<mat-card>
+  <h2>Tabs With Navigation</h2>
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link [routerLink]="list">
+      List Component
+    </a>
+    <a mat-tab-link [routerLink]="stepper">
+      Stepper Component
+    </a>
+    <a mat-tab-link [routerLink]="tabs">
+      Tabs Component
+    </a>
+  </nav>
+</mat-card>

@@ -1,0 +1,32 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material Tooltip Component</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Simple Tooltip With Default Tooltip Direction</h2>
+  <button mat-raised-button matTooltip="I AM TOOLTIP">
+    Click To See Tooltip
+  </button>
+</mat-card>
+<mat-card>
+  <h2>Simple Tooltip With Different Tooltip Direction</h2>
+  <button mat-raised-button matTooltip="LEFT TOOLTIP" matTooltipPosition="before">
+    Left
+  </button>&nbsp;
+  <button mat-raised-button matTooltip="RIGHT TOOLTIP" matTooltipPosition="after">
+    Right
+  </button>&nbsp;
+  <button mat-raised-button matTooltip="TOP TOOLTIP" matTooltipPosition="above">
+    Top
+  </button>&nbsp;
+  <button mat-raised-button matTooltip="BOTTOM TOOLTIP" matTooltipPosition="below">
+    Bottom
+  </button>
+</mat-card>
+<mat-card>
+  <h2>Simple Tooltip With Hide-Show Delay</h2>
+  <button mat-raised-button matTooltipPosition="after" matTooltip="SORRY FOR THE DELAY" [matTooltipShowDelay]="3000" [matTooltipHideDelay]="5000">
+    Delayed Tooltip
+  </button>
+</mat-card>

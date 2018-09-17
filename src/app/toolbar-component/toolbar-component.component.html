@@ -1,0 +1,63 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material Toolbar Component</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Simple Toolbar</h2>
+  <mat-toolbar>Angular Material Toolbar</mat-toolbar>
+</mat-card>
+<mat-card>
+  <h2>Toolbar With Multiple Rows</h2>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <h3>This is toolbar 1</h3>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <h3>This is toolbar 2</h3>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <h3>This is toolbar 3</h3>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</mat-card>
+<mat-card>
+  <h2>Toolbar With Multiple Rows and Icons</h2>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <h3>This is toolbar 1</h3>
+      <mat-icon>shopping_cart</mat-icon>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <h3>This is toolbar 2</h3>
+      <mat-icon>supervisor_account</mat-icon>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <h3>This is toolbar 3</h3>
+      <mat-icon>videocam</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</mat-card>
+<mat-card>
+  <h2>Toolbar With Menu</h2>
+  <mat-toolbar>
+    <h3 class="custom-space">Angular Material Toolbar With Menu</h3>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>volume_mute</mat-icon>
+        <span>Mute Volume</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>volume_down</mat-icon>
+        <span>Down Volume</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>volume_off</mat-icon>
+        <span>Off Volume</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+</mat-card>

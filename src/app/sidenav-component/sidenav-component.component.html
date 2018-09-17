@@ -1,0 +1,59 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material SideNav Component</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Basic Sidenav With Drawer</h2>
+  <mat-drawer-container class="mycontainer">
+    <mat-drawer mode="side" opened>
+      <h3>This is drawer</h3>
+    </mat-drawer>
+    <mat-drawer-content>
+      <h3>This is main site content</h3>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</mat-card>
+<mat-card>
+  <h2>Multiple SideNavs</h2>
+  <mat-sidenav-container class="mycontainer">
+    <mat-sidenav opened mode="side">
+      <h3>Left Sidenav</h3>
+    </mat-sidenav>
+    <mat-sidenav opened mode="side" position="end">
+      <h3>Right Sidenav</h3>
+    </mat-sidenav>
+    <h3>This is main site content</h3>
+  </mat-sidenav-container>
+</mat-card>
+<mat-card>
+  <h2>Hide - Show Sidenav</h2>
+  <mat-drawer-container class="mycontainer" autosize>
+    <mat-drawer #drawer mode="side">
+      <h3>My Menu - Drawer Content</h3>
+      <br>
+      <a href="javascript:void(0)">Link 1</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)">Link 2</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)">Link 3</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)">Link 4</a>
+      <br>
+      <br>
+      <a href="javascript:void(0)">Link 5</a>
+      <br>
+      <br>
+    </mat-drawer>
+
+    <div class="toggle-button-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </div>
+
+  </mat-drawer-container>
+</mat-card>
