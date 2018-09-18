@@ -1,5 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { ListComponentComponent } from './list-component/list-component.component';
 import { StepperComponentComponent } from './stepper-component/stepper-component.component';
 import { TabsComponentComponent } from './tabs-component/tabs-component.component';
@@ -13,7 +14,8 @@ import { TooltipComponentComponent } from './tooltip-component/tooltip-component
 
 const appRoutes: Routes = [
     // Default Page   
-    { path: '', redirectTo: 'list', pathMatch: 'full' },
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    { path: 'dashboard', component: DashboardComponent },
     { path: 'list', component: ListComponentComponent },
     { path: 'stepper', component: StepperComponentComponent },
     { path: 'tabs', component: TabsComponentComponent },

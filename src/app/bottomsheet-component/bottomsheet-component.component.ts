@@ -13,7 +13,7 @@ export class BottomsheetComponentComponent implements OnInit {
   ngOnInit() {
   }
 
-  openBottomSheet() {
+  openSheet() {
     this.bottomSheet.open(BottomsheetExampleComponentComponent);
   }
 }
@@ -25,7 +25,7 @@ export class BottomsheetComponentComponent implements OnInit {
 export class BottomsheetExampleComponentComponent {
   constructor(private bottomSheetRef: MatBottomSheetRef<BottomsheetExampleComponentComponent>) { }
 
-  openLink(event: MouseEvent): void {
+  open(event: MouseEvent): void {
     this.bottomSheetRef.dismiss();
     event.preventDefault();
   }

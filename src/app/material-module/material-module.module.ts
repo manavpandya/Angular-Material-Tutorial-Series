@@ -8,8 +8,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   imports: [
@@ -27,7 +29,9 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     MatTreeModule,
     MatSidenavModule,
     MatTooltipModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatSnackBarModule,
+    MatDialogModule
   ],
   exports: [
     MatCardModule,
@@ -43,7 +47,9 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     MatTreeModule,
     MatSidenavModule,
     MatTooltipModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    MatSnackBarModule,
+    MatDialogModule
   ],
   declarations: []
 })

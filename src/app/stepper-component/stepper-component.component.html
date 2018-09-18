@@ -47,7 +47,7 @@
 </mat-card>
 <mat-card>
   <h2>Horizontal Stepper</h2>
-  <mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-horizontal-stepper [linear]="isLinear" #stepper1>
     <mat-step [stepControl]="firstGroup">
       <form [formGroup]="firstGroup">
         <ng-template matStepLabel>Employee Basic Details</ng-template>
@@ -96,14 +96,14 @@
       Thanks For Sharing Your Details
       <div>
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button (click)="stepper.reset()">Reset</button>
+        <button mat-button (click)="stepper1.reset()">Reset</button>
       </div>
     </mat-step>
   </mat-horizontal-stepper>
 </mat-card>
 <mat-card>
   <h2>Vertical Stepper</h2>
-  <mat-vertical-stepper [linear]="isLinear" #stepper>
+  <mat-vertical-stepper [linear]="isLinear" #stepper2>
     <mat-step [stepControl]="firstGroup">
       <form [formGroup]="firstGroup">
         <ng-template matStepLabel>Employee Basic Details</ng-template>
@@ -152,7 +152,7 @@
       Thanks For Sharing Your Details
       <div>
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button (click)="stepper.reset()">Reset</button>
+        <button mat-button (click)="stepper2.reset()">Reset</button>
       </div>
     </mat-step>
   </mat-vertical-stepper>

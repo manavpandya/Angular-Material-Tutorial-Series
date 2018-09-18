@@ -12,10 +12,14 @@ import { TabsComponentComponent } from './tabs-component/tabs-component.componen
 import { MenuComponentComponent } from './menu-component/menu-component.component';
 import { SidenavComponentComponent } from './sidenav-component/sidenav-component.component';
 import { ToolbarComponentComponent } from './toolbar-component/toolbar-component.component';
-import { BottomsheetComponentComponent , BottomsheetExampleComponentComponent } from './bottomsheet-component/bottomsheet-component.component';
+import { BottomsheetComponentComponent, BottomsheetExampleComponentComponent } from './bottomsheet-component/bottomsheet-component.component';
 import { DialogComponentComponent } from './dialog-component/dialog-component.component';
+import { SimpleDialogComponent } from './dialog-component/simpleDialog.component';
+import { DialogWithFormComponent } from './dialog-component/dialogWithForm.component';
+import { AlertDialogComponent } from './dialog-component/alertDialog.component';
 import { SnackbarComponentComponent } from './snackbar-component/snackbar-component.component';
 import { TooltipComponentComponent } from './tooltip-component/tooltip-component.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +33,12 @@ import { TooltipComponentComponent } from './tooltip-component/tooltip-component
     BottomsheetComponentComponent,
     BottomsheetExampleComponentComponent,
     DialogComponentComponent,
+    SimpleDialogComponent,
+    DialogWithFormComponent,
+    AlertDialogComponent,
     SnackbarComponentComponent,
     TooltipComponentComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +47,14 @@ import { TooltipComponentComponent } from './tooltip-component/tooltip-component
     routing,
     BrowserAnimationsModule,
     MaterialModuleModule
+  ],
+  entryComponents: [
+    BottomsheetComponentComponent, 
+    BottomsheetExampleComponentComponent,
+    DialogComponentComponent,
+    SimpleDialogComponent,
+    DialogWithFormComponent,
+    AlertDialogComponent
   ],
   exports: [
     BrowserModule,

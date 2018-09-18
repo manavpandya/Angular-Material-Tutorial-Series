@@ -3,14 +3,15 @@
   <span class="demo-toolbar"></span>  
   <button mat-button [matMenuTriggerFor]="menu">Select Components From Below Menu</button>  
   <mat-menu #menu="matMenu">  
-      <button [routerLink]="['/list']" mat-menu-item>List Component</button>  
-      <button [routerLink]="['/stepper']" mat-menu-item>Stepper Component</button>  
-      <button [routerLink]="['/tabs']" mat-menu-item>Tabs Component</button>  
-      <button [routerLink]="['/menu']" mat-menu-item>Menu Component</button>  
+      <button [routerLink]="['/']" mat-menu-item>Dashboard</button>  
+      <button [routerLink]="['/toolbar']" mat-menu-item>Toolbar Component</button>
+      <button [routerLink]="['/menu']" mat-menu-item>Menu Component</button> 
       <button [routerLink]="['/sidenav']" mat-menu-item>SideNav Component</button>  
-      <button [routerLink]="['/toolbar']" mat-menu-item>Toolbar Component</button>  
-      <button [routerLink]="['/bottomsheet']" mat-menu-item>Bottomsheet Component</button>  
+      <button [routerLink]="['/list']" mat-menu-item>List Component</button>  
+      <button [routerLink]="['/tabs']" mat-menu-item>Tabs Component</button>  
       <button [routerLink]="['/dialog']" mat-menu-item>Dialog Component</button>  
+      <button [routerLink]="['/stepper']" mat-menu-item>Stepper Component</button>  
+      <button [routerLink]="['/bottomsheet']" mat-menu-item>Bottomsheet Component</button>  
       <button [routerLink]="['/snackbar']" mat-menu-item>Snackbar Component</button>  
       <button [routerLink]="['/tooltip']" mat-menu-item>Tooltip Component</button>  
   </mat-menu>  

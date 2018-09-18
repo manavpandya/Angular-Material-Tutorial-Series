@@ -3,3 +3,11 @@
     <strong>Angular Material Snackbar Component</strong>
   </div>
 </mat-card>
+<mat-card>
+  <h2>Simple Snackbar</h2>
+  <button mat-button (click)="openSnackBar('This is Simple Snackbar')">Show snack-bar</button>
+</mat-card>
+<mat-card>
+  <h2>Simple Snackbar With Close Button</h2>
+  <button mat-button (click)="openSnackBar('This is Simple Snackbar', 'CLOSE')">Show snack-bar</button>
+</mat-card>

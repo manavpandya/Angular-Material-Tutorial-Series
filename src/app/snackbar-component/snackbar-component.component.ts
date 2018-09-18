@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '../../../node_modules/@angular/material';
 
 @Component({
   selector: 'app-snackbar-component',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnackbarComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(public snackbar: MatSnackBar) { }
 
   ngOnInit() {
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.snackbar.open(message, action, {
+      duration: 5000,
+    });
   }
 
 }
