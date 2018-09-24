@@ -11,6 +11,12 @@ import { BottomsheetComponentComponent } from './bottomsheet-component/bottomshe
 import { DialogComponentComponent } from './dialog-component/dialog-component.component';
 import { SnackbarComponentComponent } from './snackbar-component/snackbar-component.component';
 import { TooltipComponentComponent } from './tooltip-component/tooltip-component.component';
+import { ButtonsComponentComponent } from './buttons-component/buttons-component.component';
+import { TogglebuttonsComponentComponent } from './togglebuttons-component/togglebuttons-component.component';
+import { BadgeComponentComponent } from './badge-component/badge-component.component';
+import { ChipsComponentComponent } from './chips-component/chips-component.component';
+import { ProgressbarComponentComponent } from './progressbar-component/progressbar-component.component';
+import { ProgressspinnerComponentComponent } from './progressspinner-component/progressspinner-component.component';
 
 const appRoutes: Routes = [
     // Default Page   
@@ -26,6 +32,12 @@ const appRoutes: Routes = [
     { path: 'dialog', component: DialogComponentComponent },
     { path: 'snackbar', component: SnackbarComponentComponent },
     { path: 'tooltip', component: TooltipComponentComponent },
+    { path: 'buttons', component: ButtonsComponentComponent },
+    { path: 'togglebutton', component: TogglebuttonsComponentComponent },
+    { path: 'badge', component: BadgeComponentComponent },
+    { path: 'chips', component: ChipsComponentComponent },
+    { path: 'progressbar', component: ProgressbarComponentComponent },
+    { path: 'progresspinner', component: ProgressspinnerComponentComponent },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

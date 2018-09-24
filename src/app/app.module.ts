@@ -20,6 +20,12 @@ import { AlertDialogComponent } from './dialog-component/alertDialog.component';
 import { SnackbarComponentComponent } from './snackbar-component/snackbar-component.component';
 import { TooltipComponentComponent } from './tooltip-component/tooltip-component.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ButtonsComponentComponent } from './buttons-component/buttons-component.component';
+import { TogglebuttonsComponentComponent } from './togglebuttons-component/togglebuttons-component.component';
+import { BadgeComponentComponent } from './badge-component/badge-component.component';
+import { ChipsComponentComponent } from './chips-component/chips-component.component';
+import { ProgressbarComponentComponent } from './progressbar-component/progressbar-component.component';
+import { ProgressspinnerComponentComponent } from './progressspinner-component/progressspinner-component.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +45,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SnackbarComponentComponent,
     TooltipComponentComponent,
     DashboardComponent,
+    ButtonsComponentComponent,
+    TogglebuttonsComponentComponent,
+    BadgeComponentComponent,
+    ChipsComponentComponent,
+    ProgressbarComponentComponent,
+    ProgressspinnerComponentComponent,
   ],
   imports: [
     BrowserModule,

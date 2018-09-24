@@ -1,0 +1,15 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material Toggle Button Tutorial</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Simple Toggle Button</h2>
+  Are You Interested ?
+  <mat-button-toggle-group [(ngModel)]="myAnswer">
+    <mat-button-toggle value="yes">YES</mat-button-toggle>
+    <mat-button-toggle value="no">NO</mat-button-toggle>
+    <mat-button-toggle value="cant decide">CANT DECIDE</mat-button-toggle>
+  </mat-button-toggle-group><br><br>
+  Your Selection : <strong>{{ myAnswer }}</strong>
+</mat-card>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // To use Material Component  
-import { MatCardModule, MatButtonModule, MatMenuModule, MatIconModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatCardModule, MatMenuModule, MatIconModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -12,13 +12,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   imports: [
     CommonModule,
     MatCardModule,
     MatToolbarModule,
-    MatButtonModule,
     MatMenuModule,
     MatListModule,
     MatIconModule,
@@ -31,12 +36,17 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatTooltipModule,
     MatBottomSheetModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatBadgeModule,
+    MatChipsModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     MatCardModule,
     MatToolbarModule,
-    MatButtonModule,
     MatMenuModule,
     MatListModule,
     MatIconModule,
@@ -49,7 +59,13 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatTooltipModule,
     MatBottomSheetModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatBadgeModule,
+    MatChipsModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
   declarations: []
 })
