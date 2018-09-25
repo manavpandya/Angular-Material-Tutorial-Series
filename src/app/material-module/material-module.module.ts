@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // To use Material Component  
-import { MatCardModule, MatMenuModule, MatIconModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatCardModule, MatMenuModule, MatIconModule, MatFormFieldModule, MatNativeDateModule } from '@angular/material';
 import { MatListModule } from '@angular/material/list';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -18,6 +18,13 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+// Form controls
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   imports: [
@@ -29,7 +36,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatIconModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatNativeDateModule,
     MatTabsModule,
     MatTreeModule,
     MatSidenavModule,
@@ -42,7 +49,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatBadgeModule,
     MatChipsModule,
     MatProgressBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatSlideToggleModule
   ],
   exports: [
     MatCardModule,
@@ -52,7 +65,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatIconModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatNativeDateModule,
     MatTabsModule,
     MatTreeModule,
     MatSidenavModule,
@@ -65,7 +78,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatBadgeModule,
     MatChipsModule,
     MatProgressBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatSlideToggleModule
   ],
   declarations: []
 })

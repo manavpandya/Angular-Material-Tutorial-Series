@@ -17,6 +17,7 @@ import { BadgeComponentComponent } from './badge-component/badge-component.compo
 import { ChipsComponentComponent } from './chips-component/chips-component.component';
 import { ProgressbarComponentComponent } from './progressbar-component/progressbar-component.component';
 import { ProgressspinnerComponentComponent } from './progressspinner-component/progressspinner-component.component';
+import { FormcontrolsComponentComponent } from './formcontrols-component/formcontrols-component.component';
 
 const appRoutes: Routes = [
     // Default Page   
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
     { path: 'chips', component: ChipsComponentComponent },
     { path: 'progressbar', component: ProgressbarComponentComponent },
     { path: 'progresspinner', component: ProgressspinnerComponentComponent },
+    { path: 'formcontrols', component: FormcontrolsComponentComponent },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

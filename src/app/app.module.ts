@@ -26,6 +26,7 @@ import { BadgeComponentComponent } from './badge-component/badge-component.compo
 import { ChipsComponentComponent } from './chips-component/chips-component.component';
 import { ProgressbarComponentComponent } from './progressbar-component/progressbar-component.component';
 import { ProgressspinnerComponentComponent } from './progressspinner-component/progressspinner-component.component';
+import { FormcontrolsComponentComponent } from './formcontrols-component/formcontrols-component.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { ProgressspinnerComponentComponent } from './progressspinner-component/p
     ChipsComponentComponent,
     ProgressbarComponentComponent,
     ProgressspinnerComponentComponent,
+    FormcontrolsComponentComponent,
   ],
   imports: [
     BrowserModule,

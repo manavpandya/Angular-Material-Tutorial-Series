@@ -1,0 +1,62 @@
+<mat-card>
+  <div class="alert alert-info">
+    <strong>Angular Material Form Controls Component</strong>
+  </div>
+</mat-card>
+<mat-card>
+  <h2>Input controls</h2>
+  <form>
+    <!-- Input control -->
+    <mat-form-field>
+      <input matInput placeholder="Enter your full name">
+    </mat-form-field>
+    <!-- Textarea control -->
+    <mat-form-field>
+      <textarea matInput placeholder="Your feedback"></textarea>
+    </mat-form-field>
+    <!-- Input control -->
+    <mat-form-field>
+      <input matInput type="email" placeholder="Email">
+    </mat-form-field>
+    <!-- Date picker -->
+    <mat-form-field>
+      <input matInput [matDatepicker]="datepicker" placeholder="Select DOB">
+      <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+      <mat-datepicker #datepicker></mat-datepicker>
+    </mat-form-field>
+    <!-- Radio group -->
+    <mat-radio-group>
+      <span>Gender :</span>
+      <mat-radio-button value="Male">Male</mat-radio-button>
+      <mat-radio-button value="Female">Female</mat-radio-button>
+    </mat-radio-group>
+    <br>
+    <br>
+    <!-- Select box -->
+    <mat-form-field>
+      <mat-select placeholder="Your Country">
+        <mat-option value="one">Country 1</mat-option>
+        <mat-option value="two">Country 2</mat-option>
+        <mat-option value="three">Country 3</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <br>
+    <!-- Checkbox controls -->
+    <span>Hobbies :</span>
+    <ul>
+      <li>
+        <mat-checkbox>Reading</mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox>Writing</mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox>Sports</mat-checkbox>
+      </li>
+    </ul>
+    <!-- Slide toggle -->
+    <mat-slide-toggle>Accept Terms & Conditions</mat-slide-toggle>
+    <button mat-button mat-stroked-button color="warn">Submit</button>
+  </form>
+</mat-card>
