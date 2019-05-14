@@ -47,7 +47,7 @@
 </mat-card>
 <mat-card>
   <h2>Horizontal Stepper</h2>
-  <mat-horizontal-stepper [linear]="isLinear" #stepper1>
+  <mat-horizontal-stepper linear="isLinear" #stepper1>
     <mat-step [stepControl]="firstGroup">
       <form [formGroup]="firstGroup">
         <ng-template matStepLabel>Employee Basic Details</ng-template>
@@ -103,7 +103,7 @@
 </mat-card>
 <mat-card>
   <h2>Vertical Stepper</h2>
-  <mat-vertical-stepper [linear]="isLinear" #stepper2>
+  <mat-vertical-stepper linear="isLinear" #stepper2>
     <mat-step [stepControl]="firstGroup">
       <form [formGroup]="firstGroup">
         <ng-template matStepLabel>Employee Basic Details</ng-template>
